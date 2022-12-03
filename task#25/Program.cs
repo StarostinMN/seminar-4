@@ -9,7 +9,14 @@ int A = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число  B: ");
 int B = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"{A} ^ {B} = {ComputingExp(A, B)}");
+if (B <= 0)
+{
+    Console.WriteLine("В качестве числа B необходимо ввести натуральное число");
+}
+else
+{
+    Console.WriteLine($"{A} ^ {B} = {ComputingExp(A, B)}");
+}
 
 int ComputingExp(int a, int b)
 {
